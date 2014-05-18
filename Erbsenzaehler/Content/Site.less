@@ -1,0 +1,125 @@
+﻿body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* styles for validation helpers */
+.field-validation-error {
+    color: #b94a48;
+}
+
+.field-validation-valid {
+    display: none;
+}
+
+input.input-validation-error {
+    border: 1px solid #b94a48;
+}
+
+input[type="checkbox"].input-validation-error {
+    border: 0 none;
+}
+
+.validation-summary-errors {
+    color: #b94a48;
+}
+
+.validation-summary-valid {
+    display: none;
+}
+
+.amount {
+    text-align: right;
+}
+
+.line {
+    .glyphicon-tag {
+        color: #5cb85c;
+    }
+}
+
+.ignoredLine {
+    color: lighten(#333, 50%);
+
+    .label.label-success {
+        background-color: lighten(#5cb85c, 25%);
+    }
+
+    .glyphicon-tag {
+        color: lighten(#5cb85c, 25%);
+    }
+
+    .label.label-info {
+        background-color: lighten(#5bc0de, 25%);
+    }
+}
+
+.multi-line {
+    min-height: 100px;
+    max-width: 100%;
+}
+
+.regex {
+    font-family: monospace;
+    white-space: pre-wrap;
+}
+
+.single-line {
+    .date {
+        max-width: 100px;
+    }
+
+    .amount {
+        max-width: 100px;
+    }
+}
+
+.line {
+    .ng-enter, .ng-leave, .ng-move {
+        -webkit-transition: 0.5s linear all;
+        -moz-transition: 0.5s linear all;
+        -o-transition: 0.5s linear all;
+        transition: 0.5s linear all;
+    }
+
+    .ng-move {
+        opacity: 0;
+        height: 0;
+        overflow: hidden;
+
+        .ng-move-active {
+            opacity: 1;
+            height: 120px;
+        }
+    }
+
+    .ng-enter {
+        opacity: 0;
+        height: 0;
+        overflow: hidden;
+
+        .ng-enter-active {
+            opacity: 1;
+            height: 120px;
+        }
+    }
+
+
+    .ng-leave {
+        opacity: 1;
+        overflow: hidden;
+
+        .ng-leave-active {
+            opacity: 0;
+            height: 0;
+            padding-top: 0;
+            padding-bottom: 0;
+        }
+    }
+}
